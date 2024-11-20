@@ -37,31 +37,11 @@
   gtag('config', 'G-LWPGTK5YQP');
 </script>
 
-<script>
-
-  a = t1.value
-  document.getElementById("p1").innerHTML= a
-  document.getElementById("p1").classname="s2"
 
 
-
-const fontSizeInput = document.getElementById('t1');
-const myText = document.getElementById('p1');
-
-fontSizeInput.addEventListener('input', () => {
-  myText.style.fontSize = fontSizeInput.value + 'px';
-});
-
-
-  
-
-
-
-
-
-
-</script>
-
+#myText {
+  font-size: 16px;
+}
 
 
 
@@ -107,6 +87,12 @@ fontSizeInput.addEventListener('input', () => {
           <p id="p1">
 
           </p>
+
+          const fontSizeInput = document.getElementById('fontSizeInput');
+          const myText = document.getElementById('myText');
+          fontSizeInput.addEventListener('input', () => {
+             myText.style.fontSize = fontSizeInput.value + 'px';
+});
 
 
 
